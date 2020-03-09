@@ -1,0 +1,4 @@
+Run,Method,Model,Score, KaggleScore, Comments
+1,Baseline with no adjusments + dropna, RF, 0.78,,Overfitting & try to add feat_eng
+2,Imputation of missing values, RF, 0.80, 0.76076, Overfitting & try to add feat_eng
+3,Imputation of missing values, RF + best_threshold, 0.80, 0.76555
