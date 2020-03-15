@@ -1,4 +1,9 @@
 Run,Method,Model,Score, KaggleScore, Comments
 1,Baseline with no adjusments + dropna, RF, 0.78,,Overfitting & try to add feat_eng
 2,Imputation of missing values, RF, 0.80, 0.76076, Overfitting & try to add feat_eng
-3,Imputation of missing values, RF + best_threshold, 0.80, 0.76555
+3,Imputation of missing values, RF + best_threshold, 0.80, 0.76555, Overfitting & try to add feat_eng
+4,FeatEng v1, RF + best_threshold, 0.8268, 0.74162, Solve overfitting+review feat eng of Person Title+HyperTuning
+5,FeatEng v1, RF + best_threshold, 0.8436, 0.72248, Adjusted hyperparameters (n_estimators, min_samples). Pending: +review feat eng of Person Title + GridSearch + XGBoost
+6,FeatEng v2, XGB, 0.8436, 0.76076, FeatEng. Pending: +Remove base variables + GridSearch
+7,FeatEng v2, XGB, 0.8491, 0.78468, FeatEng.+remove base variables Pending: GridSearch + Ensemble
+8,FeatEng v2, Soft ensemble, 0.8436, 0., Pending: HP tuning: gridsearch
